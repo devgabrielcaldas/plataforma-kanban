@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Meu Quadro Kanban</title>
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+  <header>
+    <h1>📌 Kanban | Gabriel Caldas</h1>
+    <button id="toggleTheme">🌙 Alternar Tema</button>
+  </header>
+
+  <main>
+    <section class="add-task">
+      <input type="text" id="taskInput" placeholder="Nova tarefa..." />
+      <button id="addTaskBtn">Adicionar</button>
+    </section>
+
+    <section class="kanban-board">
+      <div class="column" data-status="todo">
+        <h2>A Fazer</h2>
+        <div class="task-list" id="todo"></div>
+      </div>
+      <div class="column" data-status="doing">
+        <h2>Em Andamento</h2>
+        <div class="task-list" id="doing"></div>
+      </div>
+      <div class="column" data-status="done">
+        <h2>Concluído</h2>
+        <div class="task-list" id="done"></div>
+      </div>
+    </section>
+  </main>
+
+  <script src="scripts/script.js" defer></script>
+  <link rel="stylesheet" href="style.css" />
+</body>
+</html>
