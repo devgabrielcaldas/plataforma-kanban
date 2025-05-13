@@ -58,7 +58,6 @@ function salvarTarefas(): void {
 
   localStorage.setItem('kanbanTarefas', JSON.stringify(dados));
 }
-
 // Função para restaurar tarefas do localStorage
 function restaurarTarefas(): void {
   const dadosSalvos = localStorage.getItem('kanbanTarefas');
